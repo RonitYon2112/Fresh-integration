@@ -1,0 +1,38 @@
+name: Bug Report
+description: 提交你发现的 Bug
+title: "[Bug] 简要描述 Bug"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "感谢你帮助我们改进整合包！请尽量提供详细信息，这能帮助我们更快地修复问题。"
+  - type: input
+    id: modpack-version
+    attributes:
+      label: 整合包版本
+      description: "你使用的是哪个版本的整合包？（格式：游戏版本+整合包版本）例如：1.21.5-1.0。0"
+      placeholder: "游戏版本+整合包版本"
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug 描述
+      description: "请清晰、详细地描述你遇到的问题。"
+      placeholder: "游戏崩溃、与某个mod不兼容。"
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 重现步骤
+      description: "告诉我们如何能让 Bug 再次出现，步骤越详细越好。"
+      placeholder: "1. 打开游戏\n2. 制作钻石剑\n3. 攻击僵尸"
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 附加信息 (可选)
+      description: "如果有任何截图、日志文件（崩溃报告）或视频，请提供链接。"
+      placeholder: "链接到崩溃日志或截图。"

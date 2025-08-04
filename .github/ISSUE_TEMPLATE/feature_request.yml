@@ -1,0 +1,16 @@
+name: Feature Request
+description: 提交你对整合包的改进建议
+title: "[Suggestion] 简要描述建议"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "我们很乐意听取你的建议！"
+  - type: textarea
+    id: suggestion-description
+    attributes:
+      label: 建议内容
+      description: "请描述你的建议，并说明为什么它能让整合包更好。"
+      placeholder: "建议添加或去除某个 Mod。"
+    validations:
+      required: true
